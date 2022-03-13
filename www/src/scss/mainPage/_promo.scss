@@ -1,0 +1,36 @@
+.section {
+    // .section_promo
+    &_promo {
+    }
+}
+.container {
+    // .container_promo
+    &_promo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+.promo {
+    // .promo_block
+    &_block {
+        margin: 100px 0;
+    }
+}
+.block {
+    // .block_mainText
+    &_mainText {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+
+    }
+
+    // .block_secondaryText
+    &_secondaryText {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

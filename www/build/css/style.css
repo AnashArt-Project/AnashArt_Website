@@ -98,7 +98,7 @@ body.locked {
 }
 
 nav {
-  background-color: rgba(0, 119, 134, 0.651);
+  background-color: rgba(0, 0, 0, 0);
   overflow: hidden;
 }
 
@@ -110,12 +110,17 @@ nav {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 .logo a {
-  color: white;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 22px;
+  color: black;
 }
 
 .menu {
@@ -129,7 +134,14 @@ nav {
 }
 
 .menu__item-link {
-  color: white;
+  font-family: "Courier New", Courier, monospace;
+  margin-left: 20px;
+  font-size: 22px;
+  color: black;
+}
+
+.menu__item-link:hover {
+  color: red;
 }
 
 .burger {
@@ -261,7 +273,7 @@ nav {
   }
 
   .menu__item-link {
-    color: white;
+    color: black;
   }
 }
 

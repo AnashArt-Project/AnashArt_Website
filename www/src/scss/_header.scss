@@ -2,7 +2,7 @@
 
 // Navbar
 nav {
-    background-color: rgba(0, 119, 134, 0.651);
+    background-color: rgba(0, 0, 0, 0.0);
     overflow: hidden;
 }
 
@@ -10,19 +10,21 @@ nav {
     display: flex;
     width: 100%;
     justify-content: space-between;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    align-items: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 
 .logo {
     a {
-        color: white;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 22px;
+        color: black;
     }
 }
 
 .menu {
     display: flex;
-
     // .menu__item
     &__item {
         margin-left: 25px;
@@ -30,7 +32,14 @@ nav {
 
     // .menu__item-link
     &__item-link {
-        color: white;
+        font-family: 'Courier New', Courier, monospace;
+        margin-left: 20px;
+        font-size: 22px;
+        color: black;
+    }
+
+    &__item-link:hover {
+        color: red;
     }
 }
 
@@ -132,6 +141,6 @@ nav {
 
     // .menu__link
     .menu__item-link {
-        color: white;
+        color: black;
     }
 }

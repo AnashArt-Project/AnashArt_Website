@@ -155,7 +155,8 @@ nav {
 }
 
 .menu__item-link:hover {
-  color: red;
+  background: aquamarine;
+  color: black;
 }
 
 .burger {
@@ -232,11 +233,6 @@ img {
   margin-top: 100px;
 }
 
-.block-lastCollection {
-  width: 100px;
-  height: 300px;
-}
-
 .block-lastCollection_img {
   max-width: 600px;
   margin: 0 50px;
@@ -246,22 +242,16 @@ img {
   -o-object-fit: contain;
      object-fit: contain;
   -webkit-transition: 2s ease;
-  /* Safari and Chrome */
   -moz-transition: 2s ease;
-  /* Firefox 4 */
   -o-transition: 2s ease;
-  /* Opera */
 }
 
 .block-lastCollection_img .hint-text {
   position: absolute;
   visibility: hidden;
   -webkit-transition: 2s ease;
-  /* Safari and Chrome */
   -moz-transition: 2s ease;
-  /* Firefox 4 */
   -o-transition: 2s ease;
-  /* Opera */
 }
 
 .block-lastCollection_img:hover img {
@@ -302,6 +292,76 @@ img {
 
 .block-lastCollection_mainText h3 {
   font-size: 40px;
+}
+
+.head {
+  margin-top: 120px;
+}
+
+.head h3 {
+  font-size: 60px;
+}
+
+.list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 500px;
+  list-style: none;
+  margin: 60px auto;
+  margin-bottom: 25px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: normal;
+  font-size: 18px;
+  text-align: center;
+}
+
+.list__item {
+  cursor: pointer;
+}
+
+.list .active {
+  background: aquamarine;
+  color: black;
+  padding: 0 10px;
+}
+
+.blocks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.blocks__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.blocks__item {
+  height: 400px;
+  width: 400px;
+  margin: 20px;
+}
+
+.row_img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+footer {
+  display: block;
 }
 
 @media (max-width: 1449.98px) {
@@ -428,7 +488,8 @@ img {
   }
 
   .menu__item-link {
-    color: black;
+    font-size: 50px;
+    color: aquamarine;
   }
 }
 

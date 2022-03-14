@@ -39,7 +39,8 @@ nav {
     }
 
     &__item-link:hover {
-        color: red;
+        background: aquamarine;
+        color: black;
     }
 }
 
@@ -141,6 +142,7 @@ nav {
 
     // .menu__link
     .menu__item-link {
-        color: black;
+        font-size: 50px;
+        color:aquamarine;
     }
 }

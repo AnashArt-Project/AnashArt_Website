@@ -62,16 +62,13 @@ function filter() {
             case 'all':
                 getItems('blocks__item')
                 break
-            case 'winter':
+            case 't_shirt':
                 getItems(targetId)
                 break
-            case 'spring':
+            case 'hoodie':
                 getItems(targetId)
                 break
-            case 'autumn':
-                getItems(targetId)
-                break
-            case 'summer':
+            case 'poster':
                 getItems(targetId)
                 break
         }

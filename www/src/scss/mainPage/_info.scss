@@ -1,0 +1,38 @@
+.section {
+    // .section_info
+    &_info {
+    }
+}
+.container {
+    // .container_info
+    &_info {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+.block-info {
+
+    // .block-info_text
+
+    &_text {
+        max-width: 500px;
+        margin: 25px;
+
+        h3{
+            font-size: 60px;
+            text-align: left;
+        }
+        h5{
+            font-size: 24px;
+            text-align: left;
+        }
+    }
+
+    // .block-info_img
+
+    &_img {
+        max-width: 700px;
+        margin: 25px;
+    }
+}

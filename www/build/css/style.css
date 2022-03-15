@@ -111,6 +111,31 @@ h5 {
   text-align: center;
 }
 
+h4 {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 700;
+  font-size: 18px;
+  text-align: center;
+}
+
+.btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 200px;
+  height: 50px;
+  background-color: aquamarine;
+  border: 2px solid black;
+  border-radius: 50px;
+  margin: 25px;
+}
+
 nav {
   background-color: rgba(0, 0, 0, 0);
   overflow: hidden;
@@ -152,6 +177,16 @@ nav {
   margin-left: 20px;
   font-size: 28px;
   color: black;
+  padding: 0 10px;
+}
+
+.menu__item-link_active {
+  background: aquamarine;
+  font-family: "Courier New", Courier, monospace;
+  margin-left: 20px;
+  font-size: 28px;
+  color: black;
+  padding: 0 10px;
 }
 
 .menu__item-link:hover {
@@ -372,6 +407,38 @@ img {
 .row_img {
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.container_info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.block-info_text {
+  max-width: 500px;
+  margin: 25px;
+}
+
+.block-info_text h3 {
+  font-size: 60px;
+  text-align: left;
+}
+
+.block-info_text h5 {
+  font-size: 24px;
+  text-align: left;
+}
+
+.block-info_img {
+  max-width: 700px;
+  margin: 25px;
 }
 
 footer {

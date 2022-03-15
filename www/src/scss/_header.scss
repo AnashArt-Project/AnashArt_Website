@@ -36,6 +36,17 @@ nav {
         margin-left: 20px;
         font-size: 28px;
         color: black;
+        padding: 0 10px;
+
+        &_active {
+            background: aquamarine;
+            font-family: 'Courier New', Courier, monospace;
+            margin-left: 20px;
+            font-size: 28px;
+            color: black;
+            padding: 0 10px;
+            
+        }
     }
 
     &__item-link:hover {
@@ -43,6 +54,7 @@ nav {
         color: black;
     }
 }
+
 
 .burger {
     display: none;
@@ -145,4 +157,27 @@ nav {
         font-size: 50px;
         color:aquamarine;
     }
+}
+
+
+.container {
+}
+.navbar {
+}
+.logo {
+}
+.menu {
+
+		// .menu__item
+
+		&__item {
+		}
+
+		// .menu__item-link
+
+		&__item-link {
+		}
+}
+
+.burger {
 }

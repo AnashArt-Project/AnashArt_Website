@@ -54,3 +54,22 @@ h5 {
     font-size: 18px;
     text-align: center;
 }
+
+h4 {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 50px;
+    background-color: aquamarine;
+    border: 2px solid black;
+    border-radius: 50px;
+    margin: 25px;
+}

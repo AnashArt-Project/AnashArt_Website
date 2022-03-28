@@ -100,7 +100,7 @@ body.locked {
 h3 {
   font-family: "Courier New", Courier, monospace;
   font-weight: bold;
-  font-size: 28px;
+  font-size: 24px;
   text-align: center;
 }
 
@@ -122,8 +122,8 @@ h4 {
 
 .btn {
   -webkit-transition: 0.5s ease;
-  -moz-transition: 0.5s ease;
   -o-transition: 0.5s ease;
+  transition: 0.5s ease;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -138,7 +138,7 @@ h4 {
   background-color: aquamarine;
   border: 2px solid black;
   border-radius: 50px;
-  margin: 25px;
+  margin: 25px 0;
 }
 
 .btn:hover {
@@ -167,7 +167,8 @@ nav {
 
 .logo a {
   font-family: "Courier New", Courier, monospace;
-  font-size: 28px;
+  font-size: 32px;
+  font-weight: 500;
   color: black;
 }
 
@@ -184,7 +185,7 @@ nav {
 .menu__item-link {
   font-family: "Courier New", Courier, monospace;
   margin-left: 20px;
-  font-size: 28px;
+  font-size: 22px;
   color: black;
   padding: 0 10px;
 }
@@ -193,7 +194,7 @@ nav {
   background: aquamarine;
   font-family: "Courier New", Courier, monospace;
   margin-left: 20px;
-  font-size: 28px;
+  font-size: 22px;
   color: black;
   padding: 0 10px;
 }
@@ -209,7 +210,7 @@ nav {
 }
 
 .section_banner {
-  background-color: yellow;
+  background-color: aquamarine;
   border: 4px solid black;
 }
 
@@ -218,11 +219,11 @@ nav {
 }
 
 .notification h3 {
+  font-size: 18px;
   font-weight: 500;
 }
 
 .container_hero {
-  margin: 0;
   padding: 0;
   background-color: aquamarine;
   max-width: 100%;
@@ -232,8 +233,8 @@ nav {
 img {
   width: 100%;
   height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .container_promo {
@@ -299,16 +300,16 @@ img {
   -o-object-fit: contain;
      object-fit: contain;
   -webkit-transition: 2s ease;
-  -moz-transition: 2s ease;
   -o-transition: 2s ease;
+  transition: 2s ease;
 }
 
 .block-lastCollection_img .hint-text {
   position: absolute;
   visibility: hidden;
   -webkit-transition: 2s ease;
-  -moz-transition: 2s ease;
   -o-transition: 2s ease;
+  transition: 2s ease;
 }
 
 .block-lastCollection_img:hover img {
@@ -333,10 +334,6 @@ img {
           justify-content: left;
 }
 
-.block-lastCollection_secondaryText h5 {
-  font-size: 20px;
-}
-
 .block-lastCollection_mainText {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -345,10 +342,6 @@ img {
       -ms-flex-pack: left;
           justify-content: left;
   margin-left: 60px;
-}
-
-.block-lastCollection_mainText h3 {
-  font-size: 40px;
 }
 
 .head {
@@ -372,7 +365,7 @@ img {
   margin-bottom: 25px;
   font-family: "Courier New", Courier, monospace;
   font-weight: normal;
-  font-size: 18px;
+  font-size: 22px;
   text-align: center;
 }
 
@@ -407,8 +400,8 @@ img {
 }
 
 .blocks__item {
-  height: 600px;
-  width: 600px;
+  max-height: 600px;
+  max-width: 600px;
   margin: 20px;
   margin-bottom: 150px;
 }
@@ -424,11 +417,38 @@ img {
 .blocks_text h5 {
   font-size: 20px;
   margin-top: 20px;
+  font-weight: 700;
 }
 
 .row_img {
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -webkit-transition: 1s ease;
+  -o-transition: 1s ease;
+  transition: 1s ease;
+}
+
+.row-block_img:hover .row_img {
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+}
+
+.row-block_img:hover .hint-text {
+  background-color: aquamarine;
+  padding: 5px;
+  visibility: visible;
+  margin-top: -120px;
+  margin-left: 50px;
+}
+
+.hint-text {
+  position: absolute;
+  visibility: hidden;
+  -webkit-transition: 2s ease;
+  -o-transition: 2s ease;
+  transition: 2s ease;
+  color: black;
+  margin-top: -20px;
 }
 
 .section_info {
@@ -489,7 +509,7 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 250px;
+  height: 200px;
 }
 
 .links-footer {
@@ -507,22 +527,119 @@ footer {
 
 .links-footer img {
   margin: 0 50px;
-  max-width: 50px;
+  max-width: 35px;
 }
 
 .text-footer h3 {
   font-weight: 500;
 }
 
-@media (max-width: 1449.98px) {
+@media (min-width: 991.98px) {
+  .block_mainText h3 {
+    font-size: 22px;
+  }
+
+  .block_secondaryText h5 {
+    font-size: 16px;
+  }
+
+  .block-lastCollection_mainText h3 {
+    font-size: 36px;
+  }
+}
+
+@media (min-width: 1299.98px) {
+  .block-info_text h3 {
+    font-size: 50px;
+  }
+
+  .block-info_text h5 {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 1299.98px) {
   .container {
-    max-width: 1200px;
+    max-width: 1250px;
+  }
+
+  .list {
+    font-size: 18px;
+  }
+
+  .blocks__item {
+    max-height: 400px;
+    max-width: 400px;
+  }
+
+  .block-info_text h3 {
+    font-size: 40px;
+  }
+
+  .block-info_text h5 {
+    font-size: 20px;
   }
 }
 
 @media (max-width: 991.98px) {
   .container {
     max-width: 970px;
+  }
+
+  .container_promo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+
+  .promo_block {
+    margin: 50px 0;
+    max-width: 450px;
+  }
+
+  .block_mainText h3 {
+    font-size: 28px;
+  }
+
+  .block_secondaryText h5 {
+    font-size: 18px;
+  }
+
+  .container_lastCollection {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    margin-top: 0px;
+  }
+
+  .lastCollection_block {
+    margin-top: 100px;
+  }
+
+  .block-lastCollection_img {
+    max-width: 800px;
+  }
+
+  .block-lastCollection_mainText h3 {
+    font-size: 32px;
+  }
+
+  .block-info_text h3 {
+    font-size: 40px;
+  }
+
+  .block-info_text h5 {
+    font-size: 20px;
+  }
+
+  .links-footer img {
+    max-width: 25px;
+  }
+
+  .text-footer h3 {
+    font-size: 21px;
   }
 }
 
@@ -549,6 +666,7 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    font-size: 50px;
     pointer-events: all;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -641,16 +759,106 @@ footer {
     font-size: 50px;
     color: aquamarine;
   }
+
+  .menu__item-link_active {
+    font-size: 50px;
+  }
 }
 
 @media (max-width: 767.98px) {
   .container {
     max-width: 740px;
   }
+
+  .block-lastCollection_img {
+    margin: 0 0;
+  }
+
+  .head h3 {
+    font-size: 30px;
+  }
+
+  .blocks__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+
+  .blocks__item {
+    margin-bottom: 80px;
+  }
+
+  .blocks_text h3 {
+    font-size: 21px;
+  }
+
+  .container_info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+
+  .block-info_text {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+
+  .block-info_img {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+  }
 }
 
 @media (max-width: 479.98px) {
   .container {
     max-width: none;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+  h5 {
+    font-size: 18px;
+  }
+
+  h4 {
+    font-size: 16px;
+  }
+
+  .notification h3 {
+    font-size: 16px;
+  }
+
+  .block_mainText h3 {
+    font-size: 22px;
+  }
+
+  .block_secondaryText h5 {
+    font-size: 14px;
+  }
+
+  .block-lastCollection_secondaryText h5 {
+    font-size: 18px;
+  }
+
+  .block-lastCollection_mainText h3 {
+    font-size: 24px;
+  }
+
+  .blocks__item {
+    margin-bottom: 30px;
+  }
+
+  .block-info_text h3 {
+    font-size: 30px;
+  }
+
+  .block-info_text h5 {
+    font-size: 18px;
   }
 }

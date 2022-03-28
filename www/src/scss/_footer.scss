@@ -14,7 +14,7 @@ footer{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 250px;
+    height: 200px;
     
 }
 
@@ -25,12 +25,18 @@ footer{
     justify-content: center;
     img {
         margin: 0 50px;
-        max-width: 50px;
+        max-width: 35px;
+        @media (max-width: $breakpoint992) {
+            max-width: 25px;
+        }
     }
 }
 
 .text-footer {
     h3 {
         font-weight: 500;
+        @media (max-width: $breakpoint992) {
+            font-size: 21px;
+        }
     }
 }

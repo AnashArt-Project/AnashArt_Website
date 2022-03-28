@@ -5,8 +5,8 @@
     margin: 0 auto;
     padding: 0 $containerSidePadding + px;
 
-    @media (max-width: $breakpoint1450) {
-        max-width: 1200px;
+    @media (max-width: $breakpoint1300) {
+        max-width: 1250px;
     }
 
     @media (max-width: $breakpoint992) {
@@ -44,8 +44,11 @@ body {
 h3 {
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
-    font-size: 28px;
+    font-size: 24px;
     text-align: center;
+    @media (max-width: $breakpoint480) {
+        font-size: 24px;
+    }
 }
 
 h5 {
@@ -53,6 +56,9 @@ h5 {
     font-weight: normal;
     font-size: 18px;
     text-align: center;
+    @media (max-width: $breakpoint480) {
+        font-size: 18px;
+    }
 }
 
 h4 {
@@ -62,12 +68,13 @@ h4 {
     text-align: center;
     text-decoration: none;
     color: black;
+    @media (max-width: $breakpoint480) {
+        font-size: 16px;
+    }
 }
 
 .btn {
-    -webkit-transition: 0.5s ease;
-    -moz-transition: 0.5s ease;
-    -o-transition: 0.5s ease;
+    transition: 0.5s ease;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -76,7 +83,11 @@ h4 {
     background-color: aquamarine;
     border: 2px solid black;
     border-radius: 50px;
-    margin: 25px;
+    margin: 25px 0;
+
+    h4{
+
+    }
 }
 
 .btn:hover {

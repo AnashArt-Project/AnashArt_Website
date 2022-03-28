@@ -3,6 +3,10 @@
 
     h3 {
         font-size: 60px;
+
+        @media (max-width: $breakpoint768) {
+            font-size: 30px;
+        }
     }
 }
 
@@ -16,8 +20,12 @@
 
     font-family: 'Courier New', Courier, monospace;
     font-weight: normal;
-    font-size: 18px;
+    font-size: 22px;
     text-align: center;
+
+    @media (max-width: $breakpoint1300) {
+        font-size: 18px;
+    }
 
     &__item {
         cursor: pointer;
@@ -36,37 +44,87 @@
     justify-content: center;
     align-items: center;
 
+
     &__row {
         display: flex;
+
+        @media (max-width: $breakpoint768) {
+            flex-flow: column;
+        }
     }
 
     &__item {
-        height: 600px;
-        width: 600px;
+        max-height: 600px;
+        max-width: 600px;
         margin: 20px;
         margin-bottom: 150px;
 
+        @media (max-width: $breakpoint1300) {
+            max-height: 400px;
+            max-width: 400px;
+
+        }
+
+        @media (max-width: $breakpoint768) {
+            margin-bottom: 80px;
+        }
+
+        @media (max-width: $breakpoint480) {
+            margin-bottom: 30px;
+        }
+
     }
+
+
 
     &_text {
         margin: 30px 0;
 
         h3 {
             font-weight: 400;
+
+            @media (max-width: $breakpoint768) {
+                font-size: 21px;
+            }
         }
 
         h5 {
             font-size: 20px;
             margin-top: 20px;
+            font-weight: 700;
         }
     }
 }
 
 .row {
-
+    
     // .row_img
-
     &_img {
-        object-fit: cover;
+        object-fit: contain;
+            transition: 1s ease;
     }
+
+}
+.row-block_img:hover {
+
+    .row_img {
+        filter: blur(3px);
+    }
+
+    .hint-text {
+        background-color: aquamarine;
+        padding: 5px;
+        visibility: visible;
+        margin-top: -120px;
+        margin-left: 50px;
+        
+    }
+}
+
+.hint-text {
+    position: absolute;
+    visibility: hidden;
+    transition: 2s ease;
+    color: black;
+    margin-top: -20px;
 }

@@ -18,7 +18,8 @@ nav {
 .logo {
     a {
         font-family: 'Courier New', Courier, monospace;
-        font-size: 28px;
+        font-size: 32px;
+        font-weight: 500;
         color: black;
     }
 }
@@ -34,7 +35,7 @@ nav {
     &__item-link {
         font-family: 'Courier New', Courier, monospace;
         margin-left: 20px;
-        font-size: 28px;
+        font-size: 22px;
         color: black;
         padding: 0 10px;
 
@@ -42,7 +43,7 @@ nav {
             background: aquamarine;
             font-family: 'Courier New', Courier, monospace;
             margin-left: 20px;
-            font-size: 28px;
+            font-size: 22px;
             color: black;
             padding: 0 10px;
             
@@ -80,6 +81,7 @@ nav {
             height: 100vh;
             width: 100vw;
             flex-direction: column;
+            font-size: 50px;
             pointer-events: all;
             justify-content: center;
             align-items: center;
@@ -150,34 +152,16 @@ nav {
     // .menu__item
     .menu__item {
         margin-top: 15px;
+        
     }
 
     // .menu__link
     .menu__item-link {
         font-size: 50px;
         color:aquamarine;
+
+        &_active {
+            font-size: 50px;
+        }
     }
-}
-
-
-.container {
-}
-.navbar {
-}
-.logo {
-}
-.menu {
-
-		// .menu__item
-
-		&__item {
-		}
-
-		// .menu__item-link
-
-		&__item-link {
-		}
-}
-
-.burger {
 }

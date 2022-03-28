@@ -774,6 +774,19 @@ footer {
     margin: 0 0;
   }
 
+  .block-lastCollection_img:focus img {
+    -webkit-filter: blur(3px);
+            filter: blur(3px);
+  }
+
+  .block-lastCollection_img:focus .hint-text {
+    background-color: aquamarine;
+    padding: 5px;
+    visibility: visible;
+    margin-top: -210px;
+    margin-left: 100px;
+  }
+
   .head h3 {
     font-size: 30px;
   }
@@ -791,6 +804,19 @@ footer {
 
   .blocks_text h3 {
     font-size: 21px;
+  }
+
+  .row-block_img:focus .row_img {
+    -webkit-filter: blur(3px);
+            filter: blur(3px);
+  }
+
+  .row-block_img:focus .hint-text {
+    background-color: aquamarine;
+    padding: 5px;
+    visibility: visible;
+    margin-top: -120px;
+    margin-left: 50px;
   }
 
   .container_info {

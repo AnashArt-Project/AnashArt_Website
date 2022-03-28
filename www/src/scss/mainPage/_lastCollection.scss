@@ -65,6 +65,23 @@
 
     }
 
+    @media (max-width: $breakpoint768) {
+        &_img:focus {
+    
+            img {
+                filter: blur(3px);
+            }
+    
+            .hint-text {
+                background-color: aquamarine;
+                padding: 5px;
+                visibility: visible;
+                margin-top: -210px;
+                margin-left: 100px;
+            }
+        }
+    }
+
     // .block_secondaryText
     &_secondaryText {
         display: flex;

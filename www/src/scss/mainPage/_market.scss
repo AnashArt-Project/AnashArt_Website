@@ -121,6 +121,25 @@
     }
 }
 
+@media (max-width: $breakpoint768) {
+    .row-block_img:focus {
+
+        .row_img {
+            filter: blur(3px);
+        }
+    
+        .hint-text {
+            background-color: aquamarine;
+            padding: 5px;
+            visibility: visible;
+            margin-top: -120px;
+            margin-left: 50px;
+            
+        }
+    }
+}
+
+
 .hint-text {
     position: absolute;
     visibility: hidden;

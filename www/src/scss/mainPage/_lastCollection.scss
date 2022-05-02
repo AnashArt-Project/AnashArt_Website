@@ -1,0 +1,117 @@
+.container {
+
+    // .container_lastCollection
+    &_lastCollection {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 100px;
+
+        @media (max-width: $breakpoint992) {
+            flex-flow: column;
+            margin-top: 0px;
+        }
+    }
+}
+
+.lastCollection_block {
+    @media (max-width: $breakpoint992) {
+        margin-top: 100px;
+    }
+}
+
+.block-lastCollection {
+
+    // .block_img
+    &_img {
+        max-width: 600px;
+        margin: 0 50px;
+
+        @media (max-width: $breakpoint992) {
+            max-width: 800px;
+        }
+
+        @media (max-width: $breakpoint768) {
+            margin: 0 0;
+        }
+
+        img {
+            object-fit: contain;
+            transition: 2s ease;
+
+        }
+
+        .hint-text {
+            position: absolute;
+            visibility: hidden;
+            transition: 2s ease;
+
+        }
+    }
+
+    &_img:hover {
+
+        img {
+            filter: blur(3px);
+        }
+
+        .hint-text {
+            background-color: aquamarine;
+            padding: 5px;
+            visibility: visible;
+            margin-top: -210px;
+            margin-left: 100px;
+        }
+
+    }
+
+    @media (max-width: $breakpoint768) {
+        &_img:focus {
+    
+            img {
+                filter: blur(3px);
+            }
+    
+            .hint-text {
+                background-color: aquamarine;
+                padding: 5px;
+                visibility: visible;
+                margin-top: -210px;
+                margin-left: 100px;
+            }
+        }
+    }
+
+    // .block_secondaryText
+    &_secondaryText {
+        display: flex;
+        justify-content: left;
+
+        h5 {
+            @media (max-width: $breakpoint480) {
+                font-size: 18px;
+            }
+        }
+    }
+
+    // .block_mainText
+    &_mainText {
+        display: flex;
+        justify-content: left;
+        margin-left: 60px;
+
+        h3 {
+            @media (max-width: $breakpoint480) {
+                font-size: 24px;
+            }
+
+            @media (max-width: $breakpoint992) {
+                font-size: 32px;
+            }
+            @media (min-width: $breakpoint992) {
+                font-size: 36px;
+            }
+        }
+    }
+
+}

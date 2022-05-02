@@ -1,0 +1,93 @@
+// Container
+.container {
+    max-width: ($containerWidth + $containerPadding) + px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 $containerSidePadding + px;
+
+    @media (max-width: $breakpoint1300) {
+        max-width: 1250px;
+    }
+
+    @media (max-width: $breakpoint992) {
+        max-width: 970px;
+    }
+
+    @media (max-width: $breakpoint768) {
+        max-width: 740px;
+    }
+
+    @media (max-width: $breakpoint480) {
+        max-width: none;
+    }
+}
+
+// Body Locked
+body {
+    &.locked {
+        overflow: hidden;
+    }
+}
+
+// Animations
+// Fade
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+h3 {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    @media (max-width: $breakpoint480) {
+        font-size: 24px;
+    }
+}
+
+h5 {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: normal;
+    font-size: 18px;
+    text-align: center;
+    @media (max-width: $breakpoint480) {
+        font-size: 18px;
+    }
+}
+
+h4 {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    @media (max-width: $breakpoint480) {
+        font-size: 16px;
+    }
+}
+
+.btn {
+    transition: 0.5s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 50px;
+    background-color: aquamarine;
+    border: 2px solid black;
+    border-radius: 50px;
+    margin: 25px 0;
+
+}
+
+.btn:hover {
+
+    background-color: white;
+}
